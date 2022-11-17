@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="vuejs_src\public\favicon.ico" />
+    <None Remove="vuejs_src\public\index.html" />
+    <None Remove="vuejs_src\public\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="vuejs_src\public\" />
+    <Folder Include="wwwroot\vuejs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\vuejs\chunk-vendors.js" />
+    <Content Remove="wwwroot\vuejs\chunk-vendors.js.map" />
+    <Content Remove="wwwroot\vuejs\favicon.ico" />
+    <Content Remove="wwwroot\vuejs\feature1.js" />
+    <Content Remove="wwwroot\vuejs\feature1.js.map" />
+    <Content Remove="wwwroot\vuejs\feature2.js" />
+    <Content Remove="wwwroot\vuejs\feature2.js.map" />
+    <Content Remove="wwwroot\vuejs\index.html" />
+    <Content Remove="wwwroot\vuejs\index2.html" />
+    <Content Remove="wwwroot\vuejs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\vuejs\chunk-vendors.js" />
+    <None Include="wwwroot\vuejs\chunk-vendors.js.map" />
+    <None Include="wwwroot\vuejs\favicon.ico" />
+    <None Include="wwwroot\vuejs\feature1.js" />
+    <None Include="wwwroot\vuejs\feature1.js.map" />
+    <None Include="wwwroot\vuejs\feature2.js" />
+    <None Include="wwwroot\vuejs\feature2.js.map" />
+    <None Include="wwwroot\vuejs\index.html" />
+    <None Include="wwwroot\vuejs\index2.html" />
+  </ItemGroup>
+</Project>
